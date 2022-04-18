@@ -616,6 +616,12 @@ namespace ServeurRouting.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAll", ReplyAction="http://tempuri.org/IService1/GetAllResponse")]
         System.Threading.Tasks.Task<string> GetAllAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetListStations", ReplyAction="http://tempuri.org/IService1/GetListStationsResponse")]
+        System.Collections.Generic.List<ServeurRouting.ServiceReference1.Station> GetListStations();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetListStations", ReplyAction="http://tempuri.org/IService1/GetListStationsResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ServeurRouting.ServiceReference1.Station>> GetListStationsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -667,6 +673,14 @@ namespace ServeurRouting.ServiceReference1 {
         
         public System.Threading.Tasks.Task<string> GetAllAsync() {
             return base.Channel.GetAllAsync();
+        }
+        
+        public System.Collections.Generic.List<ServeurRouting.ServiceReference1.Station> GetListStations() {
+            return base.Channel.GetListStations();
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServeurRouting.ServiceReference1.Station>> GetListStationsAsync() {
+            return base.Channel.GetListStationsAsync();
         }
     }
 }

@@ -40,4 +40,16 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetListStations">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListStationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Proxy" minOccurs="0" name="GetListStationsResult" nillable="true" type="q3:ArrayOfStation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
