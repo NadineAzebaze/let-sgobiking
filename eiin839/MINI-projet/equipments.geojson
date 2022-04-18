@@ -1,0 +1,36 @@
+var equipments = {"type":"FeatureCollection","features":[
+{"type": "Feature", 
+"geometry": {"coordinates": [3.355259999369614, 48.67814000102987], "type": "Point"}, 
+"properties": 
+{"eqt_id": 348591, 
+"ins_insee": 77012, 
+"objectid": 21004, 
+"eqt_nb": 1, 
+"atlas_id": 13, 
+"ins_nom": "TERRAIN DE FOOTBALL", 
+"gest_publi": "Oui", 
+"eqt_famill": "Plateau EPS", 
+"eqt_atlas": "Equipement ext\u00e9rieur de petits jeux collectifs", 
+"eqt_nom": "CITY STADE", 
+"eqt_type": "Plateau EPS/Multisports/city-stades", 
+"ins_id": 770120001, 
+"proprio_pu": "Oui", 
+"geo_point_2d": [48.678140001, 3.35525999937]
+}},
+{"type": "Feature", 
+"geometry": {"coordinates": [2.325249999444847, 48.78483000084154], "type": "Point"},
+"properties": {
+"eqt_id": 328044, 
+"ins_insee": 94016, 
+"objectid": 21012, "eqt_nb": 1, 
+"atlas_id": 12, 
+"ins_nom": "COMPLEXE SPORTIF LEO LAGRANGE", 
+"gest_publi": "Oui", 
+"eqt_famill": "Structure Artificielle d'Escalade", 
+"eqt_atlas": "Structure Artificielle d'Escalade", 
+"eqt_nom": "MUR D'ESCALADE EXTERIEUR", 
+"eqt_type": "Structure Artificielle d'Escalade", 
+"ins_id": 940160011, 
+"proprio_pu": "Oui", 
+"geo_point_2d": [48.7848300008, 2.32524999944]}}
+]};

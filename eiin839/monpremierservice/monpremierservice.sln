@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathsLibrary", "monpremierservice\MathsLibrary.csproj", "{BCE63FB7-8AF3-4310-AF6C-33BD33219EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netformyservice", "netformyservice\netformyservice.csproj", "{42C532CE-17E1-405A-8896-0FA1B4E07FA7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BCE63FB7-8AF3-4310-AF6C-33BD33219EDC} = {BCE63FB7-8AF3-4310-AF6C-33BD33219EDC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE63FB7-8AF3-4310-AF6C-33BD33219EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE63FB7-8AF3-4310-AF6C-33BD33219EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE63FB7-8AF3-4310-AF6C-33BD33219EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE63FB7-8AF3-4310-AF6C-33BD33219EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C532CE-17E1-405A-8896-0FA1B4E07FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C532CE-17E1-405A-8896-0FA1B4E07FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C532CE-17E1-405A-8896-0FA1B4E07FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C532CE-17E1-405A-8896-0FA1B4E07FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAA44D0D-461E-4A3C-B1CC-4FBB1088A435}
+	EndGlobalSection
+EndGlobal

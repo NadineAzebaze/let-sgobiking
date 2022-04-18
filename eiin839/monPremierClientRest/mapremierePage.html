@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- The title of the page is written in the tab of the browser. -->
+    <title>My first Web Services UI client</title>
+    <link rel="stylesheet" href="main.css" >
+</head>
+<body>
+
+    <label for="apiKey">Your Key</label>
+    <input type="text" name="apiKey" id="apiKey" />
+    <button type="button" name="valider" onclick="retrieveAllContracts();"> Retrieve Contracts </button>
+
+    <label for="list_choice">Choose something:</label>
+    <input list="choices" id="list_choice" name="list_choice" />
+
+    <datalist id="choices">
+    </datalist>
+    <button type="button" name="valider" onclick="retrieveAllContractsStations();"> Retrieve Stations </button>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
