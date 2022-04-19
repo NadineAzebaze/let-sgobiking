@@ -17,11 +17,6 @@ namespace ServeurRouting.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Station", Namespace="http://schemas.datacontract.org/2004/07/Proxy")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(ServeurRouting.ServiceReference1.MainStands))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(ServeurRouting.ServiceReference1.Availabilities))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(ServeurRouting.ServiceReference1.Position))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(ServeurRouting.ServiceReference1.TotalStands))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<ServeurRouting.ServiceReference1.Station>))]
     public partial class Station : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -58,13 +53,7 @@ namespace ServeurRouting.ServiceReference1 {
         private bool overflowField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private object overflowStandsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ServeurRouting.ServiceReference1.Position positionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private object shapeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string statusField;
@@ -213,19 +202,6 @@ namespace ServeurRouting.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public object overflowStands {
-            get {
-                return this.overflowStandsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.overflowStandsField, value) != true)) {
-                    this.overflowStandsField = value;
-                    this.RaisePropertyChanged("overflowStands");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public ServeurRouting.ServiceReference1.Position position {
             get {
                 return this.positionField;
@@ -234,19 +210,6 @@ namespace ServeurRouting.ServiceReference1 {
                 if ((object.ReferenceEquals(this.positionField, value) != true)) {
                     this.positionField = value;
                     this.RaisePropertyChanged("position");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public object shape {
-            get {
-                return this.shapeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.shapeField, value) != true)) {
-                    this.shapeField = value;
-                    this.RaisePropertyChanged("shape");
                 }
             }
         }
@@ -605,12 +568,6 @@ namespace ServeurRouting.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetStation", ReplyAction="http://tempuri.org/IService1/GetStationResponse")]
         System.Threading.Tasks.Task<ServeurRouting.ServiceReference1.Station> GetStationAsync(int number, string contratName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetListStation", ReplyAction="http://tempuri.org/IService1/GetListStationResponse")]
-        System.Collections.Generic.List<ServeurRouting.ServiceReference1.Station> GetListStation();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetListStation", ReplyAction="http://tempuri.org/IService1/GetListStationResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.List<ServeurRouting.ServiceReference1.Station>> GetListStationAsync();
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAll", ReplyAction="http://tempuri.org/IService1/GetAllResponse")]
         string GetAll();
         
@@ -657,14 +614,6 @@ namespace ServeurRouting.ServiceReference1 {
         
         public System.Threading.Tasks.Task<ServeurRouting.ServiceReference1.Station> GetStationAsync(int number, string contratName) {
             return base.Channel.GetStationAsync(number, contratName);
-        }
-        
-        public System.Collections.Generic.List<ServeurRouting.ServiceReference1.Station> GetListStation() {
-            return base.Channel.GetListStation();
-        }
-        
-        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServeurRouting.ServiceReference1.Station>> GetListStationAsync() {
-            return base.Channel.GetListStationAsync();
         }
         
         public string GetAll() {

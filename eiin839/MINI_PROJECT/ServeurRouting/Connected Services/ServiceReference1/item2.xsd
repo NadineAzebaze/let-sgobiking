@@ -12,9 +12,7 @@
       <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="number" type="xs:int" />
       <xs:element minOccurs="0" name="overflow" type="xs:boolean" />
-      <xs:element minOccurs="0" name="overflowStands" nillable="true" type="xs:anyType" />
       <xs:element minOccurs="0" name="position" nillable="true" type="tns:Position" />
-      <xs:element minOccurs="0" name="shape" nillable="true" type="xs:anyType" />
       <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="totalStands" nillable="true" type="tns:TotalStands" />
     </xs:sequence>

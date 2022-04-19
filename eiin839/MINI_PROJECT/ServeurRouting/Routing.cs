@@ -14,11 +14,11 @@ namespace ServeurRouting
     // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "Service1" à la fois dans le code et le fichier de configuration.
     public class Routing : IRouting
     {
-       Service1Client cache = new Service1Client() ;
-       List<Station> stations = new List<Station>();
+        Service1Client cache = new Service1Client();
+        List<Station> stations = null;
         public Routing()
         {
-            stations = cache.GetListStation();
+            stations = cache.GetListStations();
         }
         public async Task<List<double>> ComputePositionAsync(string adress)
         {
@@ -47,7 +47,7 @@ namespace ServeurRouting
             }
         }
 
-        public async Task<string> ComputeItinerary(string origin, string destination)
+        public async Task<List<Openroute>> ComputeItinerary(string origin, string destination)
         {
             double latitudeOrigin, longitudeOrigin;
             double latitudeDestination, longitudeDestination;
@@ -58,20 +58,24 @@ namespace ServeurRouting
             coordinatesOrigin = await ComputePositionAsync(origin);
             coordinatesDestination = await ComputePositionAsync(destination);
 
-            latitudeOrigin = coordinatesOrigin[0];
-            longitudeOrigin = coordinatesOrigin[1];
-            latitudeDestination = coordinatesDestination[0];
-            longitudeDestination = coordinatesDestination[1];
+            latitudeOrigin = coordinatesOrigin[1];
+            longitudeOrigin = coordinatesOrigin[0];
+            latitudeDestination = coordinatesDestination[1];
+            longitudeDestination = coordinatesDestination[0];
 
             Station closestToOrigin = ComputeAvailableOneOrigin(latitudeOrigin, longitudeOrigin);
+            this.stations = cache.GetListStations();
             Station closestToDestination = ComputeAvailableOneDestination(latitudeDestination, longitudeDestination);
 
-            //Openroute firstway = this.ComputingRouteAsync(latitudeOrigin, longitudeOrigin,closestToOrigin.position.latitude,closestToOrigin.position.longitude,"foot-walking").Result;
-            //Openroute middleway = this.ComputingRouteAsync(closestToOrigin.position.latitude, closestToOrigin.position.longitude, closestToDestination.position.latitude, closestToDestination.position.longitude, "cycling-electric").Result;
-            //Openroute endway = this.ComputingRouteAsync(closestToDestination.position.latitude, closestToDestination.position.longitude, latitudeDestination,longitudeDestination, "foot-walking").Result;
-            
+            Openroute firstway = this.ComputingRouteAsync(longitudeOrigin, latitudeOrigin, closestToOrigin.position.longitude, closestToOrigin.position.latitude, "foot-walking").Result;
+            Openroute middleway = this.ComputingRouteAsync(closestToOrigin.position.longitude, closestToOrigin.position.latitude, closestToDestination.position.longitude, closestToDestination.position.latitude, "cycling-electric").Result;
+            Openroute endway = this.ComputingRouteAsync(closestToDestination.position.longitude, closestToDestination.position.latitude, longitudeDestination, latitudeDestination, "foot-walking").Result;
 
-            return "yes";
+            List<Openroute> result = new List<Openroute>();
+            result.Add(firstway);
+            result.Add(middleway);
+            result.Add(endway);
+            return result;
         }
 
         public Station ComputeAvailableOneOrigin(double latitude, double longitude)
@@ -81,20 +85,18 @@ namespace ServeurRouting
 
             Position p = new Position(latitude, longitude);
             GPS gps = new GPS();
-            Station closest = new Station();
-            closest = this.ComputeClosestStation(this.stations, p, gps);
+            Station closest = this.ComputeClosestStation(this.stations, p, gps);
             Station available = new Station();
             if (closest.totalStands.availabilities.bikes > 1)
             {
-                available = closest;
+                return closest;
             }
             else
             {
                 stations.Remove(closest);
-                closest = this.ComputeAvailableOneOrigin(latitude, longitude);
+               return this.ComputeAvailableOneOrigin(latitude, longitude);
             }
-            return available;
-                
+
         }
 
         public Station ComputeAvailableOneDestination(double latitude, double longitude)
@@ -120,29 +122,30 @@ namespace ServeurRouting
 
         }
 
-        public Station ComputeClosestStation(List<Station> stations,Position p,GPS gps)
+        public Station ComputeClosestStation(List<Station> stations, Position p, GPS gps)
         {
-        
-                Station closest = new Station();
-                List<double> vs = new List<double>();
-                foreach (Station station in stations)
-                {
-                    vs.Add(gps.getDistance(p, station.position));
-                }
-                double min = vs.Min();
 
-                closest = stations[vs.IndexOf(min)];
+            Station closest = new Station();
+            List<double> vs = new List<double>();
+            foreach (Station station in stations)
+            {
+                vs.Add(gps.getDistance(p, station.position));
+            }
+            double min = vs.Min();
 
-                return closest;
+            closest = stations[vs.IndexOf(min)];
+            Console.WriteLine(closest);
+
+            return closest;
         }
 
-    public async Task<Openroute> ComputingRouteAsync(double startLongitude, double startLatitude, double endLongitude, double endLatitude, string goingby)
-    {
+        public async Task<Openroute> ComputingRouteAsync(double startLongitude, double startLatitude, double endLongitude, double endLatitude, string goingby)
+        {
             Openroute route = new Openroute();
-            var baseAddress = new Uri("https://api.openrouteservice.org/v2/directions/"+goingby
-                +"?api_key=5b3ce3597851110001cf6248feed7c380d514571ae25d19073013485&start="
-                +startLatitude.ToString()+","+startLongitude.ToString()
-                +"&end="+endLatitude.ToString()+","+endLongitude.ToString());
+            var baseAddress = new Uri("https://api.openrouteservice.org/v2/directions/" + goingby
+                + "?api_key=5b3ce3597851110001cf6248feed7c380d514571ae25d19073013485&start="
+                + startLatitude.ToString().Replace(",",".") + "," + startLongitude.ToString().Replace(",", ".")
+                + "&end=" + endLatitude.ToString().Replace(",", ".") + "," + endLongitude.ToString().Replace(",", "."));
 
             using (var httpClient = new HttpClient { BaseAddress = baseAddress })
             {
@@ -152,18 +155,21 @@ namespace ServeurRouting
                 using (var response = await httpClient.GetAsync("directions"))
                 {
                     string responseData = await response.Content.ReadAsStringAsync();
-                   route = JsonConvert.DeserializeObject<Openroute>(responseData);
-                    
+                    route = JsonConvert.DeserializeObject<Openroute>(responseData);
+
                 }
             }
 
             return route;
         }
 
-       /* string IRouting.ComputeItinerary(string origin, string destination)
+
+
+        public List<Station> Get()
         {
-            throw new NotImplementedException();
-        }*/
+            //return this.cache.GetListStations();
+            return this.stations;
+        }
     }
 }
 

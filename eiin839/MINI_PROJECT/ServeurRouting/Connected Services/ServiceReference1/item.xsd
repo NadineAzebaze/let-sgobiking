@@ -16,18 +16,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetListStation">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetListStationResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Proxy" minOccurs="0" name="GetListStationResult" nillable="true" type="q2:ArrayOfStation" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="GetAll">
     <xs:complexType>
       <xs:sequence />
@@ -48,7 +36,7 @@
   <xs:element name="GetListStationsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Proxy" minOccurs="0" name="GetListStationsResult" nillable="true" type="q3:ArrayOfStation" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Proxy" minOccurs="0" name="GetListStationsResult" nillable="true" type="q2:ArrayOfStation" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

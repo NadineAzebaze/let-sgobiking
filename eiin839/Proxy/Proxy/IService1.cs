@@ -18,10 +18,6 @@ namespace Proxy
         Station GetStation(int number, string contratName);
 
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "get_list_station", BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
-        List<Station> GetListStation();
-
-        [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "get_all", BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
         string GetAll();
 
@@ -29,7 +25,6 @@ namespace Proxy
         [WebInvoke(Method = "GET", UriTemplate = "get_station", BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
 
         List<Station> GetListStations();
-
         // TODO: ajoutez vos opérations de service ici
     }
 
@@ -138,8 +133,8 @@ namespace Proxy
         [DataMember]
         public bool overflow { get; set; }
 
-        [DataMember]
-        public object shape { get; set; }
+        /*[DataMember]
+        public object shape { get; set; }*/
 
         [DataMember]
         public TotalStands totalStands { get; set; }
@@ -147,7 +142,7 @@ namespace Proxy
         [DataMember]
         public MainStands mainStands { get; set; }
 
-        [DataMember]
-        public object overflowStands { get; set; }
+        /*[DataMember]
+        public object overflowStands { get; set; }*/
     }
 }

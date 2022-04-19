@@ -7,6 +7,7 @@ using System.Text;
 using System.ServiceModel.Web;
 using System.Device.Location;
 using System.Threading.Tasks;
+using ServeurRouting.ServiceReference1;
 
 namespace ServeurRouting
 {
@@ -18,21 +19,19 @@ namespace ServeurRouting
         /* [OperationContract]
          [WebInvoke(Method = "GET", UriTemplate = "Add?x={a}&y={b}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Xml, ResponseFormat = WebMessageFormat.Json)]
 
-         Station ComputeClosestStation(Position position);
+         Station ComputeClosestStation(Position position);*/
 
          [OperationContract]
-         [WebInvoke(Method = "GET", UriTemplate = "Add?x={a}&y={b}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Xml, ResponseFormat = WebMessageFormat.Json)]
+         [WebInvoke(Method = "GET", UriTemplate = "get", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Xml, ResponseFormat = WebMessageFormat.Json)]
+         List<Station> Get();
 
-         Boolean ComputeAvailibility(Station station);
-
-         [OperationContract]
-         [WebInvoke(Method = "GET", UriTemplate = "Add?x={a}&y={b}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Xml, ResponseFormat = WebMessageFormat.Json)]
-
-         void StoreItinerary(Itinerary itinerary);*/
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "available?latitude={latitude}&longitude={longitude}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Xml, ResponseFormat = WebMessageFormat.Json)]
+        Station ComputeAvailableOneOrigin(double latitude, double longitude);
 
         [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "ComputeItinerary?origin={origin}&destination={destination}", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Xml, ResponseFormat = WebMessageFormat.Json)]
-        Task<string> ComputeItinerary(string origin, string destination);
+        Task<List<Openroute>> ComputeItinerary(string origin, string destination);
 
 
 

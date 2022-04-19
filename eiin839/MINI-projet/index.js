@@ -13,15 +13,19 @@ function getDestination() {
     return input.value;
 }
 
-function initialize() {
-    var map = L.map('map').setView([48.833, 2.333], 7); // LIGNE 18
+function initialize( equipments) {
+    var carte = L.map("divcarte").setView([49.03898, 2.07501], 16);
+    var tuiles = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: 'Fond de carte par les contributeurs <a href="https://www.openstreetmap.org/">OpenStreetMap</a>,<a href=" https://creativecommons.org/licenses/by-sa/2.0/ ">CC-BY-SA</a>'
+    }).addTo(carte);
 
-    var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { // LIGNE 20
-        attribution: '© OpenStreetMap contributors',
-        maxZoom: 19
-    });
-
-    map.addLayer(osmLayer);
+    var equipments_lyr =
+        L.geoJSON(equipments, {
+            pointToLayer: function (feature, latlng) {
+                console.log(latlng);
+                return L.marker(latlng);
+            }
+        }).addTo(carte);
 }
 
 
@@ -29,13 +33,16 @@ function initialize() {
 function sendAdress() {
     var origin = document.getElementById("origin").value;
     var destination = document.getElementById("destination").value;
+    var geoJson = {};
     var url = "http://localhost:8732/Design_Time_Addresses/ServeurRouting/Service1/rest/"
     fetch(url + "ComputeItinerary?origin=" + origin + "&destination=" + destination)
         .then(function (response) {
-            return response.json();
+            geoJson = response.json();
+            return geoJson;
         }).
         then(function (data) {
             console.log(data);
+            this.initialize(geoJson);
         });
 
 }

@@ -20,8 +20,7 @@ namespace Proxy
 
         public Service1()
         {
-           // stations = this.GetListStations();
-            this.requete =  new RequeteJCDecaux();
+            this.stations = this.GetListStations();
         }
         public Station GetStation(int number, string contratName)
         {
@@ -32,7 +31,6 @@ namespace Proxy
         public List<Station> GetListStations()
         {
             return requete.GetListStations().Result;
-           // return requete.CreatingObtectJCDecaux(5, "rouen").Result;
         }
 
         public string GetAll()
@@ -40,10 +38,6 @@ namespace Proxy
             return "ok";
         }
 
-        public List<Station> GetListStation()
-        {
-           return this.stations;
-        }
     }
 }
 

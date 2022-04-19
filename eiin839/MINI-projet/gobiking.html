@@ -9,6 +9,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="C:/Users/Utilisateur/Downloads/leaflet-routing-machine-3.2.12/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.js"></script>
+    <link rel="stylesheet" href="C:/Users/Utilisateur/Downloads/leaflet-routing-machine-3.2.12/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.css" />
 
 </head>
 <body>
@@ -25,26 +27,30 @@
     </div>
     <script src="equipments.geojson" type="text/javascript"></script>
     <script type="text/javascript">
-        var carte = L.map("divcarte").setView([49.03898, 2.07501], 16);
-        var tuiles = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-            attribution: 'Fond de carte par les contributeurs <a href="https://www.openstreetmap.org/">OpenStreetMap</a>,<a href=" https://creativecommons.org/licenses/by-sa/2.0/ ">CC-BY-SA</a>'
-        }).addTo(carte);
 
-        var cy = L.marker([49.03898, 2.07501], {
-            title: "CY University",
-            bubblingMouseEvents: true
-        }).addTo(carte);
+        var map = L.map('divcarte');
 
-        var equipments_lyr = 
-            L.geoJSON(equipments, {
-            pointToLayer: function (feature, latlng) {
-                console.log(latlng);
-                var marker = L.marker(latlng, {
-                    bubblingMouseEvents: true
-                });
-                return marker;
-            }
-        }).addTo(carte);
+        var tuiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var control = L.Routing.control({
+            waypoints: [
+                L.latLng(57.74, 11.94),
+                L.latLng(57.6792, 11.949)
+            ],
+            routeWhileDragging: true,
+            show: true,
+            autoRoute: true
+        }).addTo(map);
+
+        control.on('routeselected', function (e) {
+            L.geoJson(equipments, { onEachFeature: onEach }).addTo(map);
+        });
+
+        function onEach(feature, layer) {
+            layer.bindPopup(feature.properties.instruction);
+        }
     </script>
 </body>
 </html>
