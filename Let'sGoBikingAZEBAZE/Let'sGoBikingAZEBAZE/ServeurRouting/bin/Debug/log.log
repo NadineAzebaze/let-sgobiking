@@ -1,0 +1,753 @@
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.EndpointNotFoundException: Il n'existait pas de point de terminaison à l'écoute sur http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/ pouvant accepter le message. Ceci est souvent dû à une adresse ou une action SOAP incorrecte. S'il est présent, voir l'élément InnerException pour plus d'informations. ---> System.Net.WebException: Impossible de se connecter au serveur distant ---> System.Net.Sockets.SocketException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée 127.0.0.1:8733
+   à System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   à System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   à System.Net.HttpWebRequest.GetRequestStream()
+   à System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   à System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 24
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34
+System.ServiceModel.CommunicationException: Une erreur s'est produite lors de la réception de la réponse HTTP à http://localhost:8733/Design_Time_Addresses/WebProxy/Service1/. La raison peut en être que la liaison de point de terminaison de service n'utilise pas le protocole HTTP. Cela peut également être dû au fait qu'un contexte de requête HTTP a été ignoré par le serveur (peut-être à cause de l'arrêt du service). Pour plus d'informations, consultez les journaux du serveur. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Une erreur inattendue s'est produite lors de la réception. ---> System.IO.IOException: Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant. ---> System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.GetResponse()
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- Fin de la trace de la pile d'exception interne ---
+
+Server stack trace: 
+   à System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   à System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   à System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à ServeurRouting.ServiceReference1.IService1.GetListStation()
+   à ServeurRouting.ServiceReference1.Service1Client.GetListStation() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Connected Services\ServiceReference1\Reference.cs:ligne 665
+   à ServeurRouting.Routing..ctor() dans C:\Users\Utilisateur\source\repos\eiin839\MINI_PROJECT\ServeurRouting\Routing.cs:ligne 34

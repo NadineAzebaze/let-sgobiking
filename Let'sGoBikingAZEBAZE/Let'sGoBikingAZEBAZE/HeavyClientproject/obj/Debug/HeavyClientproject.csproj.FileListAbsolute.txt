@@ -1,0 +1,8 @@
+C:\Users\Utilisateur\source\repos\eiin839\HeavyClient\HeavyClientproject\bin\Debug\HeavyClientproject.exe.config
+C:\Users\Utilisateur\source\repos\eiin839\HeavyClient\HeavyClientproject\bin\Debug\HeavyClientproject.exe
+C:\Users\Utilisateur\source\repos\eiin839\HeavyClient\HeavyClientproject\bin\Debug\HeavyClientproject.pdb
+C:\Users\Utilisateur\source\repos\eiin839\HeavyClient\HeavyClientproject\obj\Debug\HeavyClientproject.csproj.AssemblyReference.cache
+C:\Users\Utilisateur\source\repos\eiin839\HeavyClient\HeavyClientproject\obj\Debug\HeavyClientproject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Utilisateur\source\repos\eiin839\HeavyClient\HeavyClientproject\obj\Debug\HeavyClientproject.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\source\repos\eiin839\HeavyClient\HeavyClientproject\obj\Debug\HeavyClientproject.exe
+C:\Users\Utilisateur\source\repos\eiin839\HeavyClient\HeavyClientproject\obj\Debug\HeavyClientproject.pdb

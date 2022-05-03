@@ -1,0 +1,484 @@
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Proxy.Station' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<CreatingObtectJCDecaux>d__0.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 31
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Proxy.Station' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 66
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Proxy.Station' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 65
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Proxy.Station' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 66
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Proxy.Station' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 69
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Proxy.Station' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 69
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Proxy.Station' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 69
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Proxy.Station' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 72
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Impossible d'établir une relation de confiance pour le canal sécurisé SSL/TLS. ---> System.Security.Authentication.AuthenticationException: Le certificat distant n'est pas valide selon la procédure de validation.
+   à System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   à System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Impossible d'établir une relation de confiance pour le canal sécurisé SSL/TLS. ---> System.Security.Authentication.AuthenticationException: Le certificat distant n'est pas valide selon la procédure de validation.
+   à System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   à System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Impossible d'établir une relation de confiance pour le canal sécurisé SSL/TLS. ---> System.Security.Authentication.AuthenticationException: Le certificat distant n'est pas valide selon la procédure de validation.
+   à System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   à System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Impossible d'établir une relation de confiance pour le canal sécurisé SSL/TLS. ---> System.Security.Authentication.AuthenticationException: Le certificat distant n'est pas valide selon la procédure de validation.
+   à System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   à System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Impossible d'établir une relation de confiance pour le canal sécurisé SSL/TLS. ---> System.Security.Authentication.AuthenticationException: Le certificat distant n'est pas valide selon la procédure de validation.
+   à System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   à System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Impossible d'établir une relation de confiance pour le canal sécurisé SSL/TLS. ---> System.Security.Authentication.AuthenticationException: Le certificat distant n'est pas valide selon la procédure de validation.
+   à System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   à System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Impossible d'établir une relation de confiance pour le canal sécurisé SSL/TLS. ---> System.Security.Authentication.AuthenticationException: Le certificat distant n'est pas valide selon la procédure de validation.
+   à System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   à System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Impossible d'établir une relation de confiance pour le canal sécurisé SSL/TLS. ---> System.Security.Authentication.AuthenticationException: Le certificat distant n'est pas valide selon la procédure de validation.
+   à System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   à System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Impossible d'établir une relation de confiance pour le canal sécurisé SSL/TLS. ---> System.Security.Authentication.AuthenticationException: Le certificat distant n'est pas valide selon la procédure de validation.
+   à System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   à System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: La connexion sous-jacente a été fermée : Impossible d'établir une relation de confiance pour le canal sécurisé SSL/TLS. ---> System.Security.Authentication.AuthenticationException: Le certificat distant n'est pas valide selon la procédure de validation.
+   à System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   à System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: Le nom distant n'a pas pu être résolu: 'api.jcdecaux.com'
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+System.Net.Http.HttpRequestException: Une erreur s'est produite lors de l'envoi de la demande. ---> System.Net.WebException: Le nom distant n'a pas pu être résolu: 'api.jcdecaux.com'
+   à System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 59
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457013. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457013. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457013. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457013. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457017. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457017. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457017. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457017. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457015. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457008. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457008. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457007. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457007. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457007. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[656].lastUpdate', line 1, position 457007. ---> System.InvalidCastException: Impossible de convertir un objet null en un type valeur.
+   à System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin de la trace de la pile d'exception interne ---
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   à Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   à Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   à Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   à Proxy.RequeteJCDecaux.<GetListStations>d__1.MoveNext() dans C:\Users\Utilisateur\source\repos\eiin839\Proxy\Proxy\RequeteJCDecaux.cs:ligne 68

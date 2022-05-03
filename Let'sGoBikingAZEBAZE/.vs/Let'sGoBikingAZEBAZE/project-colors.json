@@ -5,7 +5,12 @@
       "ProjectGuid": "266f865a-5a32-44b2-8b4a-e57cb8b4a2d8",
       "DisplayName": "Let'sGoBikingAZEBAZE",
       "ColorIndex": 0
+    },
+    "d6bce9d7-f639-4a84-9b9e-438034564cfb": {
+      "ProjectGuid": "d6bce9d7-f639-4a84-9b9e-438034564cfb",
+      "DisplayName": "HeavyClientproject",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
